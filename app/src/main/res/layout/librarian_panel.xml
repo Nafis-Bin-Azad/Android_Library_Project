@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/admin_background"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="cursive"
+        android:text="Librarian Section"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="3">
+
+            <Button
+                android:id="@+id/bttn_add_books"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:layout_rowWeight="1"
+                android:background="@drawable/rectangle"
+                android:text="Add Books" />
+
+            <Button
+                android:id="@+id/bttn_view_books"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:layout_rowWeight="1"
+                android:background="@drawable/rectangle"
+                android:text="View Books" />
+
+            <Button
+                android:id="@+id/bttn_view_issued_books"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:layout_rowWeight="1"
+                android:background="@drawable/rectangle"
+                android:text="View Issued Books" />
+
+            <Button
+                android:id="@+id/bttn_issue_books"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:layout_rowWeight="1"
+                android:background="@drawable/rectangle"
+                android:text="Issue Book" />
+
+            <Button
+                android:id="@+id/bttn_return_book"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:layout_rowWeight="1"
+                android:background="@drawable/rectangle"
+                android:text="Return Book" />
+
+            <Button
+                android:id="@+id/Admin_LogOut_Button"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:layout_rowWeight="1"
+                android:background="@drawable/rectangle"
+                android:text="Logout" />
+
+        </GridLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nfs.libraryprojectv2">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/library_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/library_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".Interface.AdminLoginActivity"></activity>
+        <activity android:name=".Interface.LibrarianLoginActivity"></activity>
+        <activity android:name=".Interface.AdminPanelActivity"></activity>
+        <activity android:name=".Interface.LibrarianPanelActivity"></activity>
+        <activity android:name=".Interface.AdminOptions.AddLibrarianScreen"></activity>
+        <activity
+            android:name=".Interface.AdminOptions.DeleteLibrarianPopUp"
+            android:theme="@style/AppTheme.Transparent"
+            ></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="efde04369c2dff306309724d02ec338af254e590"
+            />
+    </application>
+
+</manifest>
